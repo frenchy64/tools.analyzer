@@ -73,7 +73,7 @@
             :env Env
             :form Form
             :assignable? Boolean
-            :var t/Symbol})
+            :var Any}) ; platform dependent
      (HMap :mandatory
            {:op ':maybe-host-form
             :env Env
@@ -211,8 +211,7 @@
             :env Env
             :form Form
             :name t/Symbol
-            ;what is the result of create-var?
-            :var Any}
+            :var Any} ;platform dependent
            :optional
            {:meta Expr
             :init Expr
