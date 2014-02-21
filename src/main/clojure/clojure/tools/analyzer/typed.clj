@@ -158,6 +158,7 @@
            {:op ':letfn
             :env Env
             :form Form
+            :body Expr
             :bindings (t/Vec Expr)
             :children Children})
      (HMap :mandatory
